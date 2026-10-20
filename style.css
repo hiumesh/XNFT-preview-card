@@ -1,0 +1,25 @@
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Outfit,sans-serif;background:hsl(217,54%,11%);color:#fff;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;padding:1.5rem;font-size:18px}
+.card{width:100%;max-width:350px;background:hsl(216,50%,16%);border-radius:15px;padding:1.5rem;box-shadow:0 25px 40px rgba(0,0,0,.35)}
+.card__images{position:relative;border-radius:8px;overflow:hidden;cursor:pointer}
+.card__images img.card__image{display:block;width:100%;height:auto}
+.card__images-layer{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:hsla(178,100%,50%,.5)}
+.card__images:hover .card__images-layer{display:flex}
+.card__title{font-size:1.4rem;font-weight:400;margin:1.5rem 0 1rem}
+.card__title h1{font-size:inherit;font-weight:inherit}
+.card__title{transition:color .3s;cursor:pointer}
+.card__title:hover{color:hsl(178,100%,50%)}
+.card__description{color:hsl(215,51%,70%);font-weight:300;line-height:1.5;font-size:1.05rem}
+.card__time{display:flex;justify-content:space-between;align-items:center;margin:1.5rem 0;padding-bottom:1.5rem;border-bottom:1px solid hsl(215,32%,27%)}
+.card__time-left,.card__time-right{display:flex;align-items:center;gap:.5rem}
+.card__time div{align-items:center;gap:.5rem;font-size:1rem}
+.card__time-left{color:hsl(178,100%,50%);font-weight:600}
+.card__time-right{color:hsl(215,51%,70%);font-weight:300}
+.card__creator{display:flex;align-items:center;gap:1rem;color:hsl(215,51%,70%);font-size:.95rem;font-weight:300}
+.card__creator img{width:33px;height:33px;border-radius:50%;border:1px solid #fff}
+.card__creator a{color:#fff;text-decoration:none;transition:color .3s}
+.card__creator a:hover{color:hsl(178,100%,50%)}
+.attribution{font-size:.8rem;text-align:center;color:hsl(215,51%,70%)}
+.attribution a{color:hsl(178,100%,50%)}
+.attribution a:hover{text-decoration:underline}
+a:focus-visible{outline:2px solid hsl(178,100%,50%);outline-offset:3px}
